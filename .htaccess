@@ -1,0 +1,5 @@
+#Redirect / /index.html
+#ErrorDocument 404 /index.html
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/$ [NC]
+RewriteRule (.*) / [R=301,L]
